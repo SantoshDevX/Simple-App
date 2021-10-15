@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/getAfdelingen',[RegistratieController::class,'getAfdelingen']);
+
+
+Route::get('/tasks', [App\Http\Controllers\TaskController::class, 'index'] );
